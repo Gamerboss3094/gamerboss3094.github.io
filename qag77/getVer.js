@@ -2,9 +2,9 @@ var LVinfo = {
   "version": [
     {
       "major": 1,
-      "minor": 2,
+      "minor": 1,
       "patch": 0,
-      "full": "1.2.0"
+      "full": "1.1.0"
     }
   ]
 };
