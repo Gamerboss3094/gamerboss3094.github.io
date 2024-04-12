@@ -8,7 +8,7 @@ var LVinfo = {
     }
   ]
 };
-var trueLV = 
+var trueLV = null;
 var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
 
