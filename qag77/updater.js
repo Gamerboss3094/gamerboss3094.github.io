@@ -8,6 +8,7 @@ var LVinfo = {
     }
   ]
 };
+var trueLV = 
 var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
 
@@ -51,5 +52,13 @@ function update() {
     updatePrompt();
   }
 }
-
+function getTrueLV() {
+  let req = new XMLHttpRequest();
+  req.open('GET', 'https://raw.githubusercontent.com/Gamerboss3094/gamerboss3094.github.io/main/qag77/getVer.js', false);
+  req.onload = function() {
+    if(this.status == 200) {
+      alert(this.responseText);
+    }
+  }
+}
 update();
