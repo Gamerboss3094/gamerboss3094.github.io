@@ -61,5 +61,6 @@ function getTrueLV() {
     }
   }
 }
+alert('e');
 getTrueLV();
 update();
