@@ -2,9 +2,9 @@ var LVinfo = {
   "version": [
     {
       "major": 1,
-      "minor": 3,
+      "minor": 1,
       "patch": 0,
-      "full": "1.3.0"
+      "full": "1.1.0"
     }
   ]
 };
@@ -51,15 +51,5 @@ function update() {
     updatePrompt();
   }
 }
-/*
-function getTrueLV() {
-  let req = new XMLHttpRequest();
-  req.open('GET', 'https://raw.githubusercontent.com/Gamerboss3094/gamerboss3094.github.io/main/qag77/getVer.js', false);
-  req.onload = function() {
-    if(this.status == 200) {
-      alert(this.responseText);
-    }
-  }
-}
-*/
+
 update();
