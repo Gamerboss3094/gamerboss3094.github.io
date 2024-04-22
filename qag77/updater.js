@@ -1,10 +1,10 @@
 var LVinfo = {
   "version": [
     {
-      "major": 1,
-      "minor": 1,
-      "patch": 0,
-      "full": "1.1.0"
+      "major": 999,
+      "minor": 999,
+      "patch": 999,
+      "full": 'Cannot show latest version, click "Update" and it will automatically download the latest version'
     }
   ]
 };
@@ -45,6 +45,7 @@ function updatePrompt() {
     }
   });
 }
+
 
 function update() {
   if(updateAvailable()) {
