@@ -1,23 +1,16 @@
-function getTrueLV() {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://gamerboss3094.github.io/qag77/getVer.js");
-  xhr.onload = function() {
-    if(this.status == 200) {
-      let res = this.responseText;
-      let tempRes = res;
-      let trueLVcommand = "";
-      while((tempRes.split('\n').length - 1) > 9) {
-        tempRes = tempRes.slice(0, tempRes.lastIndexOf('\n'));
-        trueLVcommand = tempRes;
-      }
-      eval(trueLVcommand);
+var LVinfo = {
+  "version": [
+    {
+      "major": 1,
+      "minor": 1,
+      "patch": 0,
+      "full": "1.1.0"
     }
-  }
-  xhr.send();
-}
-getTrueLV();
+  ]
+};
 var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
+
 function updateAvailable() {
   if(LV.major > CV.major) {
     return true;
@@ -58,4 +51,5 @@ function update() {
     updatePrompt();
   }
 }
+
 update();
