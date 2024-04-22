@@ -60,7 +60,7 @@ function getTrueLV() {
   xhr.onload = function() {
     if(this.status == 200) {
       let res = this.responseText;
-      console.log(res)
+      alert(res);
       eval(res);
     }
   }
