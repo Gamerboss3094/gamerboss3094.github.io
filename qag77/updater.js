@@ -1,4 +1,3 @@
-/*
 var LVinfo = {
   "version": [
     {
@@ -9,10 +8,9 @@ var LVinfo = {
     }
   ]
 };
-//var CV = CVinfo.version[0];
+var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
-*/
-getTrueLV();
+
 function updateAvailable() {
   if(LV.major > CV.major) {
     return true;
@@ -54,16 +52,4 @@ function update() {
   }
 }
 
-function getTrueLV() {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://gamerboss3094.github.io/qag77/getVer.js");
-  xhr.onload = function() {
-    if(this.status == 200) {
-      let res = this.responseText;
-      alert(res);
-      eval(res);
-    }
-  }
-  xhr.send();
-}
 update();
