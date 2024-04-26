@@ -12,17 +12,9 @@ var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
 
 function updateAvailable() {
-  if(CV.major < LV.major) {
+  if(CV.major < LV.major && CV.patch < LV.patch && CV.minor < LV.minor && !(CV.major > LV.major) && !(CV.minor > LV.minor) && !(CV.patch > LV.patch)) {
     return true;
   } else {
-    if(CV.minor < LV.minor) {
-      return true;
-    } else {
-      if(CV.patch < LV.patch) {
-        return true;
-      } else {
-        return false;
-      }
-    }
+    return false;
   }
 }
