@@ -20,9 +20,7 @@ var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
 
 function updateAvailable() {
-  if(verOrder.indexOf(CVinfo.full) < (verOrder.length - 1)) {
-    return true;
-  } else {
-    return false;
-  }
+  alert('Just ignore the following messages, i am trying to update the updating system');
+  alert(CVinfo.full);
+  alert(verOrder.indexOf(CVinfo.full));
 }
