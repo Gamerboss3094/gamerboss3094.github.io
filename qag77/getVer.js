@@ -8,11 +8,19 @@ var LVinfo = {
     }
   ]
 };
+const verOrder = [
+  '1.0.0',
+  '1.1.0',
+  '1.2.0',
+  '1.3.0',
+  '1.3.1',
+  '1.4.0'
+]
 var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
 
 function updateAvailable() {
-  if(CV.major < LV.major && CV.patch < LV.patch && CV.minor < LV.minor && !(CV.major > LV.major) && !(CV.minor > LV.minor) && !(CV.patch > LV.patch)) {
+  if(verOrder.indexOf(CVinfo.full) < (verOrder.length - 1)) {
     return true;
   } else {
     return false;
