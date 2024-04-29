@@ -20,7 +20,7 @@ var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
 
 function updateAvailable() {
-  if(verOrder.indexOf(CV.full) < (verOrder.length - 1)) {
+  if((verOrder.indexOf(CV.full) < (verOrder.length - 1)) && (verOrder.indexOf(CV.full) !== -1)) {
     return true;
   } else {
     return false;
