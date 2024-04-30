@@ -14,7 +14,8 @@ const verOrder = [
   '1.2.0',
   '1.3.0',
   '1.3.1',
-  '1.4.0'
+  '1.4.0',
+  '1.5.0'
 ]
 var CV = CVinfo.version[0];
 var LV = LVinfo.version[0];
